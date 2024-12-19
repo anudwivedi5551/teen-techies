@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=v , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style ="background-color: antiquewhite;">
+   
+   <h1 style="background-color:rgb(71, 6, 6);
+   text-align: center;
+   color: beige;"
+    >QUIZ GAME</h1>
+   
+   <p style="font-size: large;
+   font-style:oblique ;
+   font-weight: bold;">
+    1.Who is the prime minister of India?  
+   </p>
+<form method = "POST" action="/submit">
+    <ul>
+        <li>
+            <input type="radio" name="answer" value="1.Mr. Narendra Modi "><p>1.Mr. Narendra Modi</p>
+            <input type="radio" name="answer" value="2.Rahul Gandhi "><p>2.Rahul Gandhi</p>
+            <input type="radio" name="answer" value="3.S Jayshankar "><p>3.S Jayshankar </p>
+            <input type="radio" name="answer" value="4.Mr. Sushil Modi "><p>4.Mr. Sushil Modi</p>
+            
+        </li>
+        
+    </ul>
+    <button  type="submit"
+    style="background-color: azure;
+    border-radius: 10px ;
+    height:36px ;
+    width :70px;
+    margin-left:0.3cm ;">Submit</button>
+
+
+<div id="result"></div>
+<script>
+    const form= document.querySelector('form')
+;
+    const resultDiv=document.getElementById('result');
+    form.addEventListener('submit',(event)=>{event.preventDefault();
+            
+        const selectedAnswer=document.querySelector('input[name="answer"]:checked').value;
+        const correctAnswer="1.Mr. Narendra Modi ";
+        let score=0;
+        if(selectedAnswer===correctAnswer){
+            score=1;
+            resultDiv.innerHTML="Correct!!.You scored 1 point.";
+        }
+        else{
+            resultDiv.innerHTML="Incorrect.Better luck next time";
+        }
+    });
+</script>
+    
+
+<p style="font-size: large;
+font-style:oblique ;
+font-weight: bold;">
+ 2.What is the capital of India?  
+   </p>
+   <form method = "POST" action="/submit">
+    <ul>
+        <li>
+            <input type="radio" name="answer" value="1.Delhi"><p>1.Delhi</p>
+            <input type="radio" name="answer" value="2.Kolkata "><p>2.Kolkata</p>
+            <input type="radio" name="answer" value="3.New Delhi "><p>3.New Delhi </p>
+            <input type="radio" name="answer" value="4.Patna "><p>4.Patna</p>
+            
+        </li>
+        
+    </ul>
+    <button type="submit"
+    
+    style="background-color:azure;
+    border-radius: 10px ;
+    height:36px ;
+    width :70px;
+    margin-left:0.3cm ;">Submit</button>
+
+</form>
+<div id="result"></div>
+<script>
+    const form= document.querySelector('form');
+
+    const resultDiv=document.getElementById('result');
+    form.addEventListener('submit',(event)=>{event.preventDefault();
+            
+        const selectedAnswer=document.querySelector('input[name="answer"]:checked').value;
+        const correctAnswer="3.New Delhi";
+        let score=0;
+        if(selectedAnswer===correctAnswer){
+            score=1;
+            resultDiv.innerHTML="Correct!!.You scored 1 point.";
+        }
+        else{
+            resultDiv.innerHTML="Incorrect.Better luck next time";
+        }
+    });
+</script>
+<p style="font-size: large;
+font-style:oblique ;
+font-weight: bold;">
+ 3.Who painted Mona Lisa?  
+</p>
+<form method = "POST" action="/submit">
+ <ul>
+     <li>
+         <input type="radio" name="answer" value="1.Leonardo The Vinci "><p>1.Leonardo The Vinci</p>
+         <input type="radio" name="answer" value="2.Jamini Roy "><p>2.Jamini Roy </p>
+         <input type="radio" name="answer" value="3.Pablo Picasso"><p>3.Pablo Picasso</p>
+         <input type="radio" name="answer" value="4.Raja Ravi Verma "><p>4.Raja Ravi Verma</p>
+         
+     </li>
+     
+ </ul>
+ <button  type="submit"
+ style="background-color: azure;
+ border-radius: 10px ;
+ height:36px ;
+ width :70px;
+ margin-left:0.3cm ;">Submit</button>
+
+
+<div id="result"></div>
+<script>
+ const form= document.querySelector('form')
+;
+ const resultDiv=document.getElementById('result');
+ form.addEventListener('submit',(event)=>{event.preventDefault();
+         
+     const selectedAnswer=document.querySelector('input[name="answer"]:checked').value;
+     const correctAnswer="1.Leonardo The Vinci";
+     let score=0;
+     if(selectedAnswer===correctAnswer){
+         score=1;
+         resultDiv.innerHTML="Correct!!.You scored 1 point.";
+     }
+     else{
+         resultDiv.innerHTML="Incorrect.Better luck next time";
+     }
+ });
+</script>
+<p style="font-size: large;
+font-style:oblique ;
+font-weight: bold;">
+ 4.Who won Oscar award for 36 times?  
+</p>
+<form method = "POST" action="/submit">
+ <ul>
+     <li>
+         <input type="radio" name="answer" value="1.R N Tagore"><p>1.R N Tagore</p>
+         <input type="radio" name="answer" value="2.Walt Disney "><p>2.Walt Disney </p>
+         <input type="radio" name="answer" value="3.S Jayshankar "><p>3.S Jayshankar </p>
+         <input type="radio" name="answer" value="4.Mother Teresa "><p>4.Mother Teresa</p>
+         
+     </li>
+     
+ </ul>
+ <button  type="submit"
+ style="background-color: azure;
+ border-radius: 10px ;
+ height:36px ;
+ width :70px;
+ margin-left:0.3cm ;">Submit</button>
+
+
+<div id="result"></div>
+<script>
+ const form= document.querySelector('form')
+;
+ const resultDiv=document.getElementById('result');
+ form.addEventListener('submit',(event)=>{event.preventDefault();
+         
+     const selectedAnswer=document.querySelector('input[name="answer"]:checked').value;
+     const correctAnswer=" 2.Walt Disney";
+     let score=0;
+     if(selectedAnswer===correctAnswer){
+         score=1;
+         resultDiv.innerHTML="Correct!!.You scored 1 point.";
+     }
+     else{
+         resultDiv.innerHTML="Incorrect.Better luck next time";
+     }
+ });
+</script>
+ 
+    
+</body>
+</html>
